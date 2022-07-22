@@ -1,0 +1,180 @@
+.header {
+  width: 100vw;
+  height: 270px;
+  background-color: rgb(20, 21, 25);
+  color: rgb(219, 219, 219);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  z-index: -50;
+}
+/*==========================================================*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 60px;
+  z-index: 10;
+}
+.nav > div {
+  font-size: 30px;
+}
+.nav > div > span {
+  color: var(--red-color);
+  position: relative;
+  animation-delay: 0.9s;
+  animation-name: fadeInAnimationNavBarBTN;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.nav > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 450px;
+  padding: 0;
+}
+.nav > ul > a {
+  padding: 5px 15px;
+  position: relative;
+  overflow: hidden;
+}
+.navHomeBTN {
+  animation-delay: 0.9s;
+  animation-name: fadeInAnimationNavBarBTN;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.navProjectBTN {
+  animation-delay: 1s;
+  animation-name: fadeInAnimationNavBarBTN;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.navContactBTN {
+  animation-delay: 1.1s;
+  animation-name: fadeInAnimationNavBarBTN;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.navAboutBTN {
+  animation-delay: 1.2s;
+  animation-name: fadeInAnimationNavBarBTN;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnimationNavBarBTN {
+  from {
+    opacity: 0;
+    top: 20px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+/*============================= BEFORE ANIMATION*/
+.nav > ul > a::before {
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.nav > ul > a:nth-of-type(1):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0px;
+  background-color: rgba(0, 195, 255, 0.404);
+  z-index: -1;
+}
+.nav > ul > a:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0px;
+  background-color: rgba(47, 255, 20, 0.404);
+  z-index: -1;
+}
+.nav > ul > a:nth-of-type(3):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0px;
+  background-color: rgba(255, 20, 20, 0.404);
+  z-index: -1;
+}
+.nav > ul > a:nth-of-type(4):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0px;
+  background-color: rgba(255, 25, 186, 0.404);
+  z-index: -1;
+}
+.nav > ul > a:hover::before {
+  content: "";
+  height: 100%;
+}
+/*========================================================== UNDER NAV*/
+.underNav {
+  width: 80%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  margin-top: 30px;
+}
+.fadeInTopAnimation,
+.fadeInBottomAnimation {
+  margin: 0;
+}
+.fadeInTopAnimation {
+  animation-delay: 0.7s;
+  animation-name: fadeInAnimation;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+  top: 20px;
+}
+.fadeInBottomAnimation {
+  animation-delay: 0.9s;
+  animation-name: fadeInAnimation;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+  top: 20px;
+}
+.spanN {
+  color: var(--red-color);
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    top: 20px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+/*==========================================================*/
