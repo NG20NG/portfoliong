@@ -2,7 +2,7 @@
   width: 100vw;
   height: 270px;
   background-color: rgb(20, 21, 25);
-  color: rgb(219, 219, 219);
+  color: var(--white-text-color);
   flex-direction: column;
   display: flex;
   align-items: center;

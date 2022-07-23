@@ -1,0 +1,8 @@
+.cards {
+  border: 1px solid black;
+  width: 80%;
+  height: 600px;
+  background-image: url("../public/Home/background123.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
