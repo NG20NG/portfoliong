@@ -79,59 +79,6 @@
     top: 0px;
   }
 }
-/*============================= BEFORE ANIMATION*/
-.nav > ul > a::before {
-  border-radius: 2px;
-  transition: all 0.2s;
-}
-.nav > ul > a:nth-of-type(1):before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 0px;
-  background-color: rgba(0, 195, 255, 0.404);
-  z-index: -1;
-}
-.nav > ul > a:nth-of-type(2):before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 0px;
-  background-color: rgba(47, 255, 20, 0.404);
-  z-index: -1;
-}
-.nav > ul > a:nth-of-type(3):before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 0px;
-  background-color: rgba(255, 20, 20, 0.404);
-  z-index: -1;
-}
-.nav > ul > a:nth-of-type(4):before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 0px;
-  background-color: rgba(255, 25, 186, 0.404);
-  z-index: -1;
-}
-.nav > ul > a:hover::before {
-  content: "";
-  height: 100%;
-}
 /*========================================================== UNDER NAV*/
 .underNav {
   width: 80%;
@@ -145,24 +92,19 @@
 .fadeInTopAnimation,
 .fadeInBottomAnimation {
   margin: 0;
+  animation-name: fadeInAnimation;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: 20px;
+  opacity: 0;
 }
 .fadeInTopAnimation {
   animation-delay: 0.7s;
-  animation-name: fadeInAnimation;
   animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  position: relative;
-  top: 20px;
 }
 .fadeInBottomAnimation {
   animation-delay: 0.9s;
-  animation-name: fadeInAnimation;
   animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  position: relative;
-  top: 20px;
 }
 .spanN {
   color: var(--red-color);
@@ -178,3 +120,20 @@
   }
 }
 /*==========================================================*/
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+  .underNav {
+    margin: 0;
+  }
+  .fadeInTopAnimation,
+  .fadeInBottomAnimation {
+    font-size: 20px;
+  }
+}

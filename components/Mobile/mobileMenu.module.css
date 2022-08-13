@@ -1,0 +1,14 @@
+.mobileMenuContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  background-color: rgba(255, 255, 255, 0.452);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+  cursor: pointer;
+}
