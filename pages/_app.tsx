@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <header className={a.header}>
-        <MobileMenu />
         <nav className={a.nav}>
           <div>
             <span>NG</span>20
@@ -51,6 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </div>
         </div>
       </header>
+      <MobileMenu />
       <Component {...pageProps} />
       <Footer />
     </div>
