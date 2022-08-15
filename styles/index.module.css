@@ -1,8 +1,27 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+}
 .cards {
-  border: 1px solid black;
-  width: 80%;
-  height: 600px;
-  background-image: url("../public/Home/background123.png");
+  width: 95%;
+  height: 2000px;
+  margin-top: 30px;
   background-repeat: no-repeat;
   background-size: 300px;
+  background-color: rgba(255, 0, 0, 0.096);
+  display: flex;
+  justify-content: center;
+}
+.leftBar {
+  border: 1px solid black;
+  width: 65%;
+  height: 500px;
+}
+.rightBar {
+  border: 1px solid black;
+  width: 35%;
+  height: 500px;
 }

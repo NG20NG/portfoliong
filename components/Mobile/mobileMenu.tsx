@@ -7,20 +7,14 @@ const MobileMenu = () => {
   const [condition, setCondition] = useState<Boolean>(false);
   const displayMenu = () => {
     if (condition === false) {
-      gsap.to(`.${mm.mobileMenuContainer}`, { height: "170px" });
-      gsap.to(`.${mm.menuBTN}`, { top: "289px" });
+      gsap.to(`.${mm.nav}`, { height: "180px", duration: 0.2 });
     } else {
-      gsap.to(`.${mm.mobileMenuContainer}`, { height: "0px" });
-      gsap.to(`.${mm.menuBTN}`, { top: "119px" });
+      gsap.to(`.${mm.nav}`, { height: "0px", duration: 0.2 });
     }
     setCondition((e) => (e = !e));
-    console.log(condition);
   };
   return (
     <div className={mm.mobileMenuContainer}>
-      <div className={mm.menuBTN} onClick={displayMenu}>
-        <div></div>
-      </div>
       <nav className={mm.nav}>
         <ul>
           <Link href="/">
@@ -45,6 +39,9 @@ const MobileMenu = () => {
           </Link>
         </ul>
       </nav>
+      <div className={mm.menuBTN} onClick={displayMenu}>
+        <div></div>
+      </div>
     </div>
   );
 };
