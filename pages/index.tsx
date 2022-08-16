@@ -12,7 +12,16 @@ const Home: NextPage = () => {
       </Head>
       <main className={i.main}>
         <div className={i.cards}>
-          <div className={i.leftBar}></div>
+          <div className={i.leftBar}>
+            <div className={i.leftBarDescriptionCard}>
+              <h1>presontation</h1>
+              <p>je suis un junne developpeur web pain d'embission.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur veritatis mollitia temporibus tenetur voluptatem
+              </p>
+            </div>
+          </div>
           <div className={i.rightBar}></div>
         </div>
       </main>
