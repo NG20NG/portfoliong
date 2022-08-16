@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <div className={i.leftBar}>
             <div className={i.leftBarDescriptionCard}>
               <h1>presontation</h1>
-              <p>je suis un junne developpeur web pain d'embission.</p>
+              <p>{`je suis un junne developpeur web pain d'embission.`}</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur veritatis mollitia temporibus tenetur voluptatem
