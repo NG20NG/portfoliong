@@ -40,6 +40,7 @@
   padding: 5px 15px;
   position: relative;
   overflow: hidden;
+  border-radius: 2px;
 }
 /*==========================================================*/
 .nav > ul > a::after {
@@ -50,7 +51,11 @@
   transform: rotate(70deg);
   width: 80px;
   height: 5px;
-  background-color: red;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 38, 255),
+    rgb(0, 204, 255)
+  );
   transition: 0.4s;
   z-index: -1;
 }
@@ -59,6 +64,11 @@
   height: 120px;
   left: -5px;
   bottom: -40px;
+}
+.nav > ul > a:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.562);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.541);
 }
 .navHomeBTN {
   animation-delay: 0.9s;
@@ -152,7 +162,6 @@
   .underNav {
     margin: 0;
     width: 95%;
-    border: 1px solid rgb(255, 0, 0);
   }
   .fadeInTopAnimation,
   .fadeInBottomAnimation {

@@ -7,7 +7,7 @@ const MobileMenu = () => {
   const [condition, setCondition] = useState<Boolean>(false);
   const displayMenu = () => {
     if (condition === false) {
-      gsap.to(`.${mm.nav}`, { height: "180px", duration: 0.2 });
+      gsap.to(`.${mm.nav}`, { height: "200px", duration: 0.2 });
     } else {
       gsap.to(`.${mm.nav}`, { height: "0px", duration: 0.2 });
     }

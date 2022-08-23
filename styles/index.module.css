@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .cards {
   width: 95%;
@@ -16,102 +16,138 @@
   justify-content: flex-start;
   align-items: center;
 }
+/*
+=======================
+sub : left bar
+=======================
+*/
 .leftBar {
-  width: 65%;
+  width: 60%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .leftBarDescriptionCard {
-  width: 800px;
-  height: 500px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.322);
-  padding: 20px;
+  width: 650px;
+  height: 400px;
   position: relative;
-  z-index: 3;
-  background-color: var(--background-black-grey);
-  color: var(--white-text-color);
+  background-color: white;
+  color: rgb(26, 26, 26);
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+}
+.titleLeftBar {
+  margin: 0;
+  width: 100%;
+  font-size: 50px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+.pDescriptionContainer {
+  height: 220px;
+  width: 510px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.p1DescriptionLeftBar {
+  font-size: 20px;
+  width: 100%;
+}
+.p2DescriptionLeftBar {
+  font-size: 20px;
+  width: 350px;
 }
 .leftBarDescriptionCard::after {
   content: "";
-  width: 110px;
-  height: 100%;
+  width: 400px;
+  height: 100px;
   position: absolute;
-  top: 0;
-  left: 80px;
-  background-image: linear-gradient(
-    to bottom,
-    var(--red-color),
-    rgb(255, 49, 49)
-  );
+  top: -2px;
+  left: -2px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
   z-index: 2;
 }
-.leftBarDescriptionCard > h1 {
-  margin: 0;
-  font-size: 100px;
-  position: relative;
-  z-index: 8;
-}
-.leftBarDescriptionCard > P {
-  font-size: 20px;
-  position: relative;
-  z-index: 8;
-  left: 200px;
+.leftBarDescriptionCard::before {
+  content: "";
   width: 400px;
+  height: 100px;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  z-index: 2;
 }
+/*
+=======================
+sub : right bar
+=======================
+*/
 .rightBar {
   width: 35%;
   height: 500px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.233);
   position: relative;
   z-index: 3;
+  background-image: url("../public/index/photoNassimPortPholioW.jpg");
+  background-size: cover;
 }
 @media only screen and (max-width: 600px) {
   .cards {
     flex-direction: column;
-    position: relative;
-    height: 2000px;
-  }
-  .leftBarDescriptionCard::after {
-    display: none;
-  }
-  .cards::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    width: 120px;
-    height: 100%;
-    background-image: linear-gradient(
-      to left,
-      var(--red-color),
-      rgb(255, 49, 49),
-      var(--red-color)
-    );
+    height: 1000px;
   }
   .leftBar {
     width: 90%;
     height: fit-content;
+  }
+  .leftBarDescriptionCard {
+    width: 100%;
+    height: 250px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .titleLeftBar {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .pDescriptionContainer {
+    width: 100%;
+    height: fit-content;
+    display: block;
+  }
+  .p1DescriptionLeftBar {
+    font-size: 20px;
+  }
+  .p2DescriptionLeftBar {
+    margin: 0;
+    font-size: 20px;
+    width: 280px;
+  }
+  .leftBarDescriptionCard::after {
+    width: 200px;
+    height: 60px;
+  }
+  .leftBarDescriptionCard::before {
+    width: 200px;
+    height: 60px;
   }
   .rightBar {
     width: 90%;
     height: 300px;
     background-color: white;
     margin-top: 50px;
-  }
-  .leftBarDescriptionCard {
-    width: 100%;
-    height: 300px;
-    border-radius: 2px;
-    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.178);
-  }
-  .leftBarDescriptionCard > h1 {
-    font-size: 40px;
-  }
-  .leftBarDescriptionCard > p {
-    left: 0;
-    width: 280px;
+    border-radius: 5px;
   }
 }
