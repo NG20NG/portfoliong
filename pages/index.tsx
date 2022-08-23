@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import i from "../styles/index.module.css";
+import ii from "../styles/index2.module.css";
+import cssPNG from "../public/index/HTMLCSSJS/css.png";
+import htmlPNG from "../public/index/HTMLCSSJS/html.png";
+import jsPNG from "../public/index/HTMLCSSJS/js.png";
 
 const Home: NextPage = () => {
+  const square = ["HTML/XML", "CSS", "JavaScript"];
   return (
     <div className={i.container}>
       <Head>
@@ -11,22 +16,57 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={i.main}>
-        <div className={i.cards}>
-          <div className={i.leftBar}>
-            <div className={i.leftBarDescriptionCard}>
-              <div className={i.titleLeftBar}>presontation</div>
-              <div className={i.pDescriptionContainer}>
-                <p
-                  className={i.p1DescriptionLeftBar}
-                >{`je suis un junne developpeur web pain d'embission.`}</p>
-                <p className={i.p2DescriptionLeftBar}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur
-                </p>
+        <div className={i.firstCardContainer}>
+          <div className={i.cards}>
+            <div className={i.leftBar}>
+              <div className={i.leftBarDescriptionCard}>
+                <p className={i.titleLeftBar}>presontation</p>
+                <div className={i.pDescriptionContainer}>
+                  <p
+                    className={i.p1DescriptionLeftBar}
+                  >{`je suis un junne developpeur web pain d'embission.`}</p>
+                  <p className={i.p2DescriptionLeftBar}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur
+                  </p>
+                </div>
               </div>
             </div>
+            <div className={i.rightBar}></div>
           </div>
-          <div className={i.rightBar}></div>
+        </div>
+        <div className={ii.secondCardContainer}>
+          <div className={ii.cards}>
+            {square.map((e: string, i: number) => {
+              const colors = [
+                "rgb(255, 166, 0)",
+                "rgb(0, 140, 255)",
+                "rgb(255, 230, 0)",
+              ];
+              const imagesPNG = [
+                "../index/HTMLCSSJS/html.png",
+                "../index/HTMLCSSJS/css.png",
+                "../index/HTMLCSSJS/js.png",
+              ];
+              const text = ["HTML", "CSS", "JavaScript"];
+              return (
+                <div
+                  key={i}
+                  className={ii.boxs}
+                  style={{
+                    backgroundColor: colors[i],
+                  }}
+                >
+                  <div
+                    className={ii.boxsImagePNG}
+                    // style={{ backgroundImage: `url('${imagesPNG[i]}')` }}
+                  ></div>
+                  <div>{text[i]}</div>
+                </div>
+              );
+            })}
+            <div className={ii.mernBox}>MERN</div>
+          </div>
         </div>
       </main>
     </div>

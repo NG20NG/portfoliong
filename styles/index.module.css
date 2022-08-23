@@ -1,11 +1,15 @@
 .main {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+.firstCardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: rgb(255, 255, 255);
 }
 .cards {
+  border: 1px solid black;
   width: 95%;
   height: fit-content;
   margin-top: 30px;

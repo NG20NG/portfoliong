@@ -18,7 +18,7 @@ const Footer = () => {
                   <div className={f.descriptionUnderTitle}>Home</div>
                 </a>
               </Link>
-              <Link href="/croject">
+              <Link href="/project">
                 <a>
                   <div className={f.descriptionUnderTitle}>Project</div>
                 </a>
