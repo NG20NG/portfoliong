@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+//======================================================
 import i from "../styles/index.module.css";
 import ii from "../styles/index2.module.css";
-import cssPNG from "../public/index/HTMLCSSJS/css.png";
-import htmlPNG from "../public/index/HTMLCSSJS/html.png";
-import jsPNG from "../public/index/HTMLCSSJS/js.png";
+//======================================================
+import Carousel from "../components/indexCarousel/carousel";
+//======================================================
 
 const Home: NextPage = () => {
   const square = ["HTML/XML", "CSS", "JavaScript"];
@@ -37,30 +38,14 @@ const Home: NextPage = () => {
         </div>
         <div className={ii.secondCardContainer}>
           <div className={ii.cards}>
-            {square.map((e: string, i: number) => {
-              const colors = [
-                "rgb(255, 166, 0)",
-                "rgb(0, 140, 255)",
-                "rgb(255, 230, 0)",
-              ];
-              const text = ["HTML", "CSS", "JavaScript"];
-              return (
-                <div
-                  key={i}
-                  className={ii.boxs}
-                  style={{
-                    backgroundColor: colors[i],
-                  }}
-                >
-                  <div
-                    className={ii.boxsImagePNG}
-                    // style={{ backgroundImage: `url('${imagesPNG[i]}')` }}
-                  ></div>
-                  <div>{text[i]}</div>
+            <div className={ii.leftBar}>
+              <div className={ii.underLeftBarwhiteBorder}>
+                <div className={ii.learnIndoReactNextjs}>
+                  <Carousel />
                 </div>
-              );
-            })}
-            <div className={ii.mernBox}>MERN</div>
+              </div>
+            </div>
+            <div className={ii.rightBar}>rightBar</div>
           </div>
         </div>
       </main>
