@@ -43,11 +43,6 @@ const Home: NextPage = () => {
                 "rgb(0, 140, 255)",
                 "rgb(255, 230, 0)",
               ];
-              const imagesPNG = [
-                "../index/HTMLCSSJS/html.png",
-                "../index/HTMLCSSJS/css.png",
-                "../index/HTMLCSSJS/js.png",
-              ];
               const text = ["HTML", "CSS", "JavaScript"];
               return (
                 <div
