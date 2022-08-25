@@ -46,7 +46,12 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className={ii.rightBar}>
-              <div className={ii.secondRightBar}></div>
+              <div className={ii.secondRightBar}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                ullam omnis vero expedita, vel cupiditate doloremque corporis
+                nihil veniam consectetur enim eveniet nemo esse similique
+                ratione porro deleniti? Ex, excepturi.
+              </div>
             </div>
           </div>
         </div>
