@@ -32,6 +32,7 @@ sub : leftBar
   height: 70%;
   margin: auto;
   display: flex;
+  overflow: hidden;
 }
 .learnIndoReactNextjs {
   margin: auto;
@@ -79,7 +80,7 @@ sub : rightBar
     justify-content: space-around;
   }
   .leftBar {
-    width: 100%;
+    width: 101%;
     height: 200px;
     border: none;
     align-items: center;

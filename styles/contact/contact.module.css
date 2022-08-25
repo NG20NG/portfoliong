@@ -1,0 +1,38 @@
+.contact {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background: red;
+  background-color: rgb(46, 47, 49);
+}
+.contact::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background: red;
+  background-color: rgb(46, 47, 49);
+}
+.secondContact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.leftBar {
+  width: 70%;
+  height: 100%;
+}
+.rightBar {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(46, 47, 49);
+}
+.koubaMap {
+  width: 100%;
+  height: 100%;
+}
