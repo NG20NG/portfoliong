@@ -3,9 +3,14 @@
   height: 100%;
 }
 .carouselContainer > .carouselClass {
-  height: 100%;
+  height: auto;
 }
-.carouselContainer > .carouselClass > div > img {
-  height: 100%;
-  border: 5px solid red;
+.carouselImages {
+  width: 100%;
+  height: 350px;
+}
+@media only screen and (max-width: 600px) {
+  .carouselImages {
+    height: 220px;
+  }
 }

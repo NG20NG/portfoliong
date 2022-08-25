@@ -5,6 +5,10 @@ import { Carousel } from "react-responsive-carousel";
 
 const CarouselMain = () => {
   const staticLink = "/index/ReactNextjs";
+  const size = {
+    width: "100%",
+    height: "100%",
+  };
   return (
     <div className={c.carouselContainer}>
       <Carousel
@@ -19,19 +23,19 @@ const CarouselMain = () => {
         dynamicHeight={true}
       >
         <div>
-          <img src={`${staticLink}/reactjs.png`} />
+          <img className={c.carouselImages} src={`${staticLink}/reactjs.png`} />
         </div>
         <div>
-          <img src={`${staticLink}/nextjs.jpg`} />
+          <img className={c.carouselImages} src={`${staticLink}/nextjs.jpg`} />
         </div>
         <div>
-          <img src={`${staticLink}/express.png`} />
+          <img className={c.carouselImages} src={`${staticLink}/express.png`} />
         </div>
         <div>
-          <img src={`${staticLink}/mongoDB.png`} />
+          <img className={c.carouselImages} src={`${staticLink}/mongoDB.png`} />
         </div>
         <div>
-          <img src={`${staticLink}/nodejs.jpg`} />
+          <img className={c.carouselImages} src={`${staticLink}/nodejs.jpg`} />
         </div>
       </Carousel>
     </div>

@@ -58,6 +58,7 @@ sub : left bar
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .p1DescriptionLeftBar {
   font-size: 20px;
@@ -102,7 +103,7 @@ sub : right bar
   z-index: 3;
   background-image: url("../public/index/photoNassimPortPholioW.jpg");
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 @media only screen and (max-width: 600px) {
   .cards {

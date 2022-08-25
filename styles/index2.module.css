@@ -1,17 +1,16 @@
 .secondCardContainer {
   width: 100vw;
-  height: 500px;
+  height: auto;
   margin-top: 80px;
   margin-bottom: 80px;
   background-color: var(--background-black-grey);
 }
 .cards {
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   background-color: var(--background-black-grey);
 }
 /*
@@ -45,7 +44,67 @@ sub : rightBar
 =======================
 */
 .rightBar {
-  border: 1px solid white;
   width: 40%;
-  height: 70%;
+  height: 65%;
+}
+.secondRightBar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.secondRightBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 155px;
+  height: 75px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+.secondRightBar::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 155px;
+  height: 75px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    height: 520px;
+    justify-content: space-around;
+  }
+  .leftBar {
+    width: 100%;
+    height: 200px;
+    border: none;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  .underLeftBarwhiteBorder {
+    margin: 0;
+    height: 220px;
+    overflow: hidden;
+  }
+  .rightBar {
+    margin: 0;
+    width: 85%;
+    height: 200px;
+  }
+  .secondRightBar::after {
+    width: 130px;
+    height: 50px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
+  .secondRightBar::before {
+    width: 130px;
+    height: 50px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  }
 }

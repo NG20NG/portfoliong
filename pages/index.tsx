@@ -45,7 +45,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className={ii.rightBar}>rightBar</div>
+            <div className={ii.rightBar}>
+              <div className={ii.secondRightBar}></div>
+            </div>
           </div>
         </div>
       </main>
