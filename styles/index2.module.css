@@ -53,13 +53,16 @@ sub : rightBar
   height: 100%;
   position: relative;
   color: white;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  padding: 0px 20px;
   font-size: 22px;
-  line-height: 50px;
-  letter-spacing: 2px;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
 }
 .secondRightBar::after {
   content: "";
@@ -84,7 +87,7 @@ sub : rightBar
 @media only screen and (max-width: 600px) {
   .cards {
     flex-direction: column;
-    height: 520px;
+    height: auto;
     justify-content: space-around;
   }
   .leftBar {
@@ -100,15 +103,17 @@ sub : rightBar
     overflow: hidden;
   }
   .rightBar {
-    margin: 0;
+    margin: 25px;
     width: 85%;
-    height: 200px;
+    height: 350px;
   }
   .secondRightBar {
-    border: 1px solid red;
     font-size: 20px;
     line-height: normal;
     letter-spacing: 2px;
+  }
+  .titleSecondRightBar {
+    width: 110%;
   }
   .secondRightBar::after {
     width: 130px;

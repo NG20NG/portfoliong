@@ -36,15 +36,10 @@ const Home: NextPage = () => {
             <div className={i.leftBar}>
               <div className={i.leftBarDescriptionCard}>
                 <p className={i.titleLeftBar}>presontation</p>
-                <div className={i.pDescriptionContainer}>
-                  <p
-                    className={i.p1DescriptionLeftBar}
-                  >{`je suis un junne developpeur web pain d'embission.`}</p>
-                  <p className={i.p2DescriptionLeftBar}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur
-                  </p>
-                </div>
+                <p
+                  className={i.p1DescriptionLeftBar}
+                >{`Je suis un jeune développeur web assoiffe de connaissance
+                débrouillard j’aime la musique le calme et l’esprit d’équipe`}</p>
               </div>
             </div>
             <div className={i.rightBar}></div>
@@ -61,9 +56,19 @@ const Home: NextPage = () => {
             </div>
             <div className={ii.rightBar}>
               <div className={ii.secondRightBar}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                ullam omnis vero expedita, vel cupiditate doloremque corporis
-                nihil veniam consectetur enim eveniet
+                <p
+                  className={ii.titleSecondRightBar}
+                >{`je suis un développeur full stack javascript typescript`}</p>
+                <ul className={ii.skillsContainer}>
+                  <li>React Js</li>
+                  <li>Next Js</li>
+                  <li>HTML / XML</li>
+                  <li>CSS</li>
+                  <li>Node Js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Python</li>
+                </ul>
               </div>
             </div>
           </div>

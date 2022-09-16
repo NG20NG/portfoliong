@@ -37,10 +37,6 @@ sub : left bar
   position: relative;
   background-color: white;
   color: rgb(26, 26, 26);
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   padding: 10px 30px;
   border: 1px solid rgba(0, 0, 0, 0.096);
 }
@@ -48,25 +44,12 @@ sub : left bar
   margin: 0;
   width: 100%;
   font-size: 50px;
-  padding: 0px 15px;
   display: flex;
   justify-content: flex-start;
-}
-.pDescriptionContainer {
-  height: 220px;
-  width: 510px;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 .p1DescriptionLeftBar {
   font-size: 20px;
   width: 100%;
-}
-.p2DescriptionLeftBar {
-  font-size: 20px;
-  width: 350px;
 }
 .leftBarDescriptionCard::after {
   content: "";
@@ -97,13 +80,14 @@ sub : right bar
 */
 .rightBar {
   width: 35%;
-  height: 500px;
+  height: 550px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.514);
   position: relative;
   z-index: 3;
   background-image: url("../public/index/photoNassimPortPholioW.jpg");
   background-size: cover;
   border-radius: 2px;
+  background-position: -35px 0px;
 }
 @media only screen and (max-width: 600px) {
   .cards {
@@ -119,6 +103,7 @@ sub : right bar
     width: 100%;
     height: auto;
     border-radius: 2px;
+    flex-direction: column;
     display: flex;
     align-items: center;
   }
@@ -154,5 +139,6 @@ sub : right bar
     margin-top: 50px;
     border-radius: 5px;
     box-shadow: none;
+    background-position: 0px 0px;
   }
 }
