@@ -11,43 +11,19 @@ const Footer = () => {
             {`l'ambition d'être le meilleur`}
           </div>
           <div className={f.footerInfo}>
-            <div>
-              <div style={{ textDecoration: "underline" }}>Links</div>
-              <Link href="/">
-                <a>
-                  <div className={f.descriptionUnderTitle}>Home</div>
-                </a>
-              </Link>
-              <Link href="/project">
-                <a>
-                  <div className={f.descriptionUnderTitle}>Project</div>
-                </a>
-              </Link>
-              <Link href="/contact">
-                <a>
-                  <div className={f.descriptionUnderTitle}>Contact</div>
-                </a>
-              </Link>
-              <Link href="/about">
-                <a>
-                  <div className={f.descriptionUnderTitle}>About</div>
-                </a>
-              </Link>
-            </div>
-            <div>
-              <div style={{ textDecoration: "underline" }}>Contact</div>
-              <div className={f.descriptionUnderTitle}>
-                ngnassim20@gmail.com
+            <div className={f.navBarFooterLinks}>
+              <div className={f.footerNavBarTitle}>Navigation</div>
+              <div className={f.footerNavBarLinks}>
+                <div>Home</div>
+                <div>Project</div>
+                <div>Contact</div>
+                <div>About</div>
               </div>
-              <Link href="https://github.com/NG20NG">
-                <a target="_blank">
-                  <div className={f.descriptionUnderTitle}>
-                    github.com/NG20NG
-                  </div>
-                </a>
-              </Link>
             </div>
-            <div></div>
+            <div className={f.navBarFooterLinks}>
+              <div>ngnassim20@gmail.com</div>
+              <div>github.com/NG20NG</div>
+            </div>
           </div>
         </div>
         <div className={f.bottomDivFooter}>

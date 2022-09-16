@@ -32,24 +32,51 @@
 }
 .footerInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 150px;
   border-top: 1px solid rgba(255, 255, 255, 0.171);
   border-bottom: 1px solid rgba(255, 255, 255, 0.171);
 }
+.navBarFooterLinks {
+  display: flex;
+  justify-content: center;
+  color: rgb(109, 109, 109);
+}
 .footerInfo > div {
-  width: 220px;
-  height: 120px;
+  width: fit-content;
+  height: 90%;
+  margin: 0px 20px;
 }
-.descriptionUnderTitle {
-  opacity: 0.5;
-  transition: 0.5s;
+.footerNavBarTitle {
+  width: 110px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  margin: 3px 0px;
+  transition: 0.3s;
 }
-.descriptionUnderTitle:hover {
-  transition: 0.5s;
-  opacity: 1;
+.footerNavBarLinks {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footerNavBarLinks > div {
+  width: 100px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footerNavBarLinks > div:hover,
+.footerNavBarTitle:hover {
+  transition: 0.3s;
+  color: rgb(180, 180, 180);
+  background-color: rgb(34, 35, 39);
+  box-shadow: 0px 0px 10px 0px black;
 }
