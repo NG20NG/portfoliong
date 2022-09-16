@@ -29,6 +29,16 @@ const Contact = () => {
               <input className={c.therdInputDescription} type="text" />
               <button className={c.submitButton}>Submit</button>
             </div>
+            <div className={c.reseauNG20Container}>
+              <div className={c.gitHubIcones}>
+                <div></div>
+                <div></div>
+              </div>
+              <div className={c.discordIcones}>
+                <div></div>
+                <div>NG20#8218</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

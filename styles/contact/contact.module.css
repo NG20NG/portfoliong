@@ -50,16 +50,17 @@ sub : rightBar
 }
 .topInputInfo > input {
   border: none;
-  width: 250px;
-  height: 25px;
+  width: 280px;
+  height: 30px;
   outline: none;
-  text-align: center;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.219);
   border-radius: 2px;
+  padding: 10px;
 }
 .topInputInfo > .therdInputDescription {
   border: none;
   height: 80px;
+  text-align: top;
 }
 .submitButton {
   border: none;
@@ -75,6 +76,52 @@ sub : rightBar
   color: white;
   background-color: rgb(0, 132, 255);
 }
+/*=============================*/
+.reseauNG20Container {
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reseauNG20Container > div {
+  width: 160px;
+  height: 40px;
+  background-color: rgb(233, 233, 233);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.gitHubIcones > div:nth-of-type(1) {
+  background-image: url("../../public/contact/GitHub-Mark-64px.png");
+  background-size: cover;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+}
+.gitHubIcones > div:nth-of-type(2) {
+  background-image: url("../../public/contact/GitHub_Logo.png");
+  background-size: cover;
+  width: 83px;
+  height: 33px;
+  margin-left: 5px;
+}
+.discordIcones > div:nth-of-type(1) {
+  background-image: url("../../public/contact/discord.svg");
+  background-size: 100% 100%;
+  width: 40px;
+  height: 30px;
+}
+.discordIcones > div:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5px;
+}
 @media only screen and (max-width: 600px) {
   .secondContact {
     flex-direction: column;
@@ -87,5 +134,13 @@ sub : rightBar
     flex-direction: column;
     display: flex;
     align-items: center;
+  }
+  .contact {
+    height: 48px;
+    width: 48px;
+    background-image: url("https://static.u.gg/assets/lol/riot_static/12.16.1/img/sprite/item2.webp");
+    background-repeat: no-repeat;
+    background-position: -432px 0px;
+    zoom: 1;
   }
 }

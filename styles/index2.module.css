@@ -104,6 +104,12 @@ sub : rightBar
     width: 85%;
     height: 200px;
   }
+  .secondRightBar {
+    border: 1px solid red;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
   .secondRightBar::after {
     width: 130px;
     height: 50px;

@@ -5,10 +5,24 @@ import i from "../styles/index.module.css";
 import ii from "../styles/index2.module.css";
 //======================================================
 import Carousel from "../components/indexCarousel/carousel";
+import { useEffect } from "react";
 //======================================================
 
 const Home: NextPage = () => {
-  const square = ["HTML/XML", "CSS", "JavaScript"];
+  const fetchingData = () => {
+    fetch(
+      "https://static.u.gg/assets/lol/riot_static/12.16.1/img/sprite/item2.webp"
+    )
+      .then((res) => {
+        res.json();
+      })
+      .then((data) => console.log(data));
+  };
+
+  useEffect(() => {
+    fetchingData;
+  }, []);
+
   return (
     <div className={i.container}>
       <Head>
@@ -49,8 +63,7 @@ const Home: NextPage = () => {
               <div className={ii.secondRightBar}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 ullam omnis vero expedita, vel cupiditate doloremque corporis
-                nihil veniam consectetur enim eveniet nemo esse similique
-                ratione porro deleniti? Ex, excepturi.
+                nihil veniam consectetur enim eveniet
               </div>
             </div>
           </div>
