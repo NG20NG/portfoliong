@@ -8,7 +8,6 @@ const NavBar = () => {
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     console.log(clientWindowHeight);
