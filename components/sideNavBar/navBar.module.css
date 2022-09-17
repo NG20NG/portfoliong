@@ -1,7 +1,7 @@
 .navBarContainer {
   position: fixed;
   top: 50%;
-  right: 0;
+  right: -200px;
   width: 87px;
   height: 200px;
   translate: 5px -50%;
@@ -12,10 +12,10 @@
   align-items: flex-start;
 }
 .navBarContainer > a {
-  background-color: rgba(255, 0, 0, 0.452);
+  background-color: rgb(40, 42, 46);
   border-radius: 2px;
   margin: 8px;
-  width: 69px;
+  width: 71px;
   height: 29px;
   display: flex;
   justify-content: center;

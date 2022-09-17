@@ -11,13 +11,22 @@ const Contact = () => {
           <div className={c.titleContainer}>
             <h2 className={c.title}>Entrer en contact</h2>
             <p className={c.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              envoyez-moi un e-mail concernant une question ou un problème
             </p>
           </div>
           <div className={c.inputContainer}>
-            <input className={c.fullName} />
-            <input className={c.email} />
-            <textarea className={c.message} />
+            <input
+              className={c.fullName + " " + c.inputTextarea}
+              placeholder="Full name"
+            />
+            <input
+              className={c.email + " " + c.inputTextarea}
+              placeholder="example@gmail.com"
+            />
+            <textarea
+              className={c.message + " " + c.inputTextarea}
+              placeholder="info"
+            />
             <button className={c.sendBTN}>Send</button>
           </div>
         </div>
