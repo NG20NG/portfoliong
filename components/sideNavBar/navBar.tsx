@@ -20,10 +20,10 @@ const NavBar = () => {
   });
   return (
     <div className={n.navBarContainer}>
-      <a>Home</a>
-      <a>Project</a>
-      <a>Contact</a>
-      <a>About</a>
+      <a href={"#home"}>Home</a>
+      <a href={"#project"}>Project</a>
+      <a href={"#contact"}>Contact</a>
+      <a href={"#about"}>About</a>
     </div>
   );
 };
