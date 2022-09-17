@@ -5,24 +5,10 @@ import i from "../styles/index.module.css";
 import ii from "../styles/index2.module.css";
 //======================================================
 import Carousel from "../components/indexCarousel/carousel";
-import { useEffect } from "react";
 //======================================================
+import NavBar from "../components/sideNavBar/navBar";
 
 const Home: NextPage = () => {
-  const fetchingData = () => {
-    fetch(
-      "https://static.u.gg/assets/lol/riot_static/12.16.1/img/sprite/item2.webp"
-    )
-      .then((res) => {
-        res.json();
-      })
-      .then((data) => console.log(data));
-  };
-
-  useEffect(() => {
-    fetchingData;
-  }, []);
-
   return (
     <div className={i.container}>
       <Head>
@@ -31,6 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={i.main}>
+        <NavBar />
         <div className={i.firstCardContainer}>
           <div className={i.cards}>
             <div className={i.leftBar}>
@@ -58,7 +45,7 @@ const Home: NextPage = () => {
               <div className={ii.secondRightBar}>
                 <p
                   className={ii.titleSecondRightBar}
-                >{`je suis un développeur full stack javascript typescript`}</p>
+                >{`Depuis le début de mon parcours en tant que développeur j'essaye de m'améliorer`}</p>
                 <ul className={ii.skillsContainer}>
                   <li>React Js</li>
                   <li>Next Js</li>
@@ -67,7 +54,7 @@ const Home: NextPage = () => {
                   <li>Node Js</li>
                   <li>Express</li>
                   <li>MongoDB</li>
-                  <li>Python</li>
+                  <li className={ii.blueThecPython}>Python</li>
                 </ul>
               </div>
             </div>

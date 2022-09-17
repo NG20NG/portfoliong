@@ -41,7 +41,6 @@
 }
 .navBarFooterLinks {
   display: flex;
-  justify-content: center;
   color: rgb(109, 109, 109);
 }
 .footerInfo > div {

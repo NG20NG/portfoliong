@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Link from "next/link";
 import a from "../styles/app/app.module.css";
 /*==============================================================*/
 import MobileMenu from "../components/Mobile/mobileMenu";
@@ -16,26 +15,18 @@ function MyApp({ Component, pageProps }: AppProps) {
             <span>NG</span>20
           </div>
           <ul>
-            <Link href="/">
-              <a className={a.navHomeBTN}>
-                <li>Home</li>
-              </a>
-            </Link>
-            <Link href="/project">
-              <a className={a.navProjectBTN}>
-                <li>Project</li>
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a className={a.navContactBTN}>
-                <li>Contact</li>
-              </a>
-            </Link>
-            <Link href="about">
-              <a className={a.navAboutBTN}>
-                <li>About</li>
-              </a>
-            </Link>
+            <a className={a.navHomeBTN} href={""}>
+              <li>Home</li>
+            </a>
+            <a className={a.navProjectBTN} href={"#project"}>
+              <li>Project</li>
+            </a>
+            <a className={a.navContactBTN} href={"#contact"}>
+              <li>Contact</li>
+            </a>
+            <a className={a.navAboutBTN} href={"#about"}>
+              <li>About</li>
+            </a>
           </ul>
         </nav>
         <div className={a.underNav}>
