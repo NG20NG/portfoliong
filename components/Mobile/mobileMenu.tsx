@@ -17,26 +17,18 @@ const MobileMenu = () => {
     <div className={mm.mobileMenuContainer}>
       <nav className={mm.nav}>
         <ul>
-          <Link href="/">
-            <a className={mm.navHomeBTN}>
-              <li>Home</li>
-            </a>
-          </Link>
-          <Link href="/project">
-            <a className={mm.navProjectBTN}>
-              <li>Project</li>
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a className={mm.navContactBTN}>
-              <li>Contact</li>
-            </a>
-          </Link>
-          <Link href="about">
-            <a className={mm.navAboutBTN}>
-              <li>About</li>
-            </a>
-          </Link>
+          <a className={mm.navHomeBTN} href={"#home"}>
+            <li>Home</li>
+          </a>
+          <a className={mm.navProjectBTN}>
+            <li>Project</li>
+          </a>
+          <a className={mm.navContactBTN} href={"#contact"}>
+            <li>Contact</li>
+          </a>
+          <a className={mm.navAboutBTN}>
+            <li>About</li>
+          </a>
         </ul>
       </nav>
       <div className={mm.menuBTN} onClick={displayMenu}>
