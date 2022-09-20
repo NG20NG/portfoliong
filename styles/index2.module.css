@@ -2,7 +2,6 @@
   width: 100vw;
   height: auto;
   margin-top: 80px;
-  margin-bottom: 80px;
   background-color: var(--background-black-grey);
 }
 .cards {
@@ -33,6 +32,7 @@ sub : leftBar
   margin: auto;
   display: flex;
   overflow: hidden;
+  border: 1px solid red;
 }
 .learnIndoReactNextjs {
   margin: auto;
@@ -113,7 +113,7 @@ sub : rightBar
   }
   .rightBar {
     margin: 25px;
-    width: 85%;
+    width: 90%;
     height: 350px;
   }
   .secondRightBar {
@@ -123,7 +123,7 @@ sub : rightBar
   }
   .titleSecondRightBar {
     width: 110%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .skillsContainer {
     width: 100%;

@@ -8,6 +8,7 @@ import Carousel from "../components/indexCarousel/carousel";
 //======================================================
 import NavBar from "../components/sideNavBar/navBar";
 import Contact from "../components/contact/contact";
+import Projects from "../components/projects/projects";
 
 const Home: NextPage = () => {
   return (
@@ -61,6 +62,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <Projects />
         <Contact />
       </main>
     </div>
