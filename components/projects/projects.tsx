@@ -2,18 +2,42 @@ import React from "react";
 import p from "./projects.module.css";
 
 const Project = () => {
+  const porojectsCard = [
+    {
+      title: "Association Chams",
+      description: `mon site de soutenance (projet de fin d'année) un site de
+      presontation de l'association cham's`,
+    },
+    {
+      title: "Backend Association Chams",
+      description: `cree un compte securiser plus admin dashboard`,
+    },
+    {
+      title: "NG Auto clicker",
+      description: "Auto clicker avec python (tkinter)",
+    },
+    {
+      title: "Remind me",
+      description: "Remind me is a flutter project",
+    },
+  ];
+  console.log(porojectsCard[0]);
+
   return (
-    <div className={p.projects}>
+    <div className={p.projects} id={"project"}>
+      <h3 className={p.titleProjects}>Projects</h3>
       <div className={p.secondProjects}>
-        <div className={p.cards}>
-          <div></div>
-        </div>
-        <div className={p.cards}>
-          <div></div>
-        </div>
-        <div className={p.cards}>
-          <div></div>
-        </div>
+        {porojectsCard.map((e: any, index: number) => {
+          return (
+            <div key={index} className={p.cards}>
+              <div className={p.pic}></div>
+              <div className={p.picDescription}>
+                <div>{e.title}</div>
+                <p>{e.description}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

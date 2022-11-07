@@ -11,8 +11,6 @@ const NavBar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    console.log(clientWindowHeight);
-
     if (clientWindowHeight >= 100) {
       gsap.to(`.${n.navBarContainer}`, { right: 0 });
       gsap.to(`.${n.navBarContainer} > a`, {
