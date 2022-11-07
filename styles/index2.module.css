@@ -32,7 +32,6 @@ sub : leftBar
   margin: auto;
   display: flex;
   overflow: hidden;
-  border: 1px solid red;
 }
 .learnIndoReactNextjs {
   margin: auto;

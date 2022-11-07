@@ -42,6 +42,29 @@
 .navBarFooterLinks {
   display: flex;
   color: rgb(109, 109, 109);
+  height: 100%;
+  flex-direction: column;
+}
+.navBarFooterLinks:nth-of-type(1) > div {
+  height: 100%;
+}
+.navBarFooterLinks:nth-of-type(2) > div {
+  height: 50%;
+  padding: auto;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navBarFooterLinks:nth-of-type(2) > div:hover {
+  height: 50%;
+  transition: 0.3s;
+  color: rgb(180, 180, 180);
+  background-color: rgb(34, 35, 39);
+  box-shadow: 0px 0px 10px 0px black;
 }
 .footerInfo > div {
   width: fit-content;
@@ -78,4 +101,15 @@
   color: rgb(180, 180, 180);
   background-color: rgb(34, 35, 39);
   box-shadow: 0px 0px 10px 0px black;
+}
+@media only screen and (max-width: 600px) {
+  .footer,
+  .topDivFooter {
+    height: auto;
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
 }

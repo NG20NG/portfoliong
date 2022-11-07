@@ -27,7 +27,7 @@ const Contact = () => {
               className={c.message + " " + c.inputTextarea}
               placeholder="info"
             />
-            <button className={c.sendBTN}>Send</button>
+            <button className={c.sendBTN}>Submit</button>
           </div>
         </div>
         <div className={c.googleMap}>
