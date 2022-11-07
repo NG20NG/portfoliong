@@ -20,7 +20,7 @@ const MobileMenu = () => {
           <a className={mm.navHomeBTN} href={"#home"}>
             <li>Home</li>
           </a>
-          <a className={mm.navProjectBTN}>
+          <a className={mm.navProjectBTN} href={"#project"}>
             <li>Project</li>
           </a>
           <a className={mm.navContactBTN} href={"#contact"}>

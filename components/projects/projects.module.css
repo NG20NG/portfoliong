@@ -1,7 +1,7 @@
 .projects {
   width: 100vw;
   height: auto;
-  margin: 50px 0px;
+  margin: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@
   background-image: url("../../public/projects/BackendAssociation.png");
 }
 .cards:nth-of-type(3) > .pic {
-  background-image: url("../../public/projects/autoClickerNG202.png");
+  background-image: url("../../public/projects/Autoclicker.png");
 }
 .cards:nth-of-type(4) > .pic {
   background-image: url("../../public/projects/Screenshot_1667842073.png");
