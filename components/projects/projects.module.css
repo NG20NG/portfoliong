@@ -12,11 +12,33 @@
   color: var(--background-black-grey);
 }
 .secondProjects {
-  width: 87%;
+  width: 90%;
   height: 90%;
-  margin: auto;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.231);
+}
+.secondProjects::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  width: 350px;
+  height: 150px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+.secondProjects::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 350px;
+  height: 150px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
 }
 .cards {
   width: 220px;
@@ -45,6 +67,9 @@
 }
 .cards:nth-of-type(4) > .pic {
   background-image: url("../../public/projects/Screenshot_1667842073.png");
+}
+.cards:nth-of-type(5) > .pic {
+  background-image: url("../../public/projects/ngportfolio.png");
 }
 .pic {
   position: relative;
@@ -94,6 +119,7 @@
     width: 100%;
     height: 250px;
     margin: 20px 0px;
+    border-radius: 2px;
   }
   .pic::before {
     height: 500px;
@@ -101,5 +127,13 @@
   .cards > .pic {
     border-bottom: 2px solid var(--background-black-grey);
     height: 100%;
+  }
+  .secondProjects::before {
+    width: 150px;
+    height: 320px;
+  }
+  .secondProjects::after {
+    width: 150px;
+    height: 320px;
   }
 }

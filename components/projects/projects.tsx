@@ -20,8 +20,11 @@ const Project = () => {
       title: "Remind me",
       description: "Remind me is a flutter project",
     },
+    {
+      title: "Portfolio NG",
+      description: "Remind me is a flutter project",
+    },
   ];
-  console.log(porojectsCard[0]);
 
   return (
     <div className={p.projects} id={"project"}>
