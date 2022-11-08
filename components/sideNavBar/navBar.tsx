@@ -4,13 +4,21 @@ import n from "./navBar.module.css";
 
 const NavBar = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState(0);
+  const [link, setLink] = useState<String>("");
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
-
+  gsap.config({
+    autoSleep: 60,
+    force3D: false,
+    nullTargetWarn: false,
+    units: { left: "%", top: "%", rotation: "rad" },
+  });
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    console.log(clientWindowHeight);
+
     if (clientWindowHeight >= 100) {
       gsap.to(`.${n.navBarContainer}`, { right: 0 });
       gsap.to(`.${n.navBarContainer} > a`, {
@@ -34,10 +42,18 @@ const NavBar = () => {
 
   return (
     <div className={n.navBarContainer}>
-      <a href={"#home"}>Home</a>
-      <a href={"#project"}>Project</a>
-      <a href={"#contact"}>Contact</a>
-      <a href={"#about"}>About</a>
+      <div className={n.linkContainer1}>
+        <a className={n.aLink} href={""}>
+          <div className={n.leftArrow1}></div>
+          <div className={n.rightArrow1}></div>
+        </a>
+      </div>
+      <div className={n.linkContainer2}>
+        <a className={n.aLink} href={""}>
+          <div className={n.leftArrow2}></div>
+          <div className={n.rightArrow2}></div>
+        </a>
+      </div>
     </div>
   );
 };

@@ -123,6 +123,13 @@
   }
   .pic::before {
     height: 500px;
+    z-index: 20;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.685),
+      rgba(0, 0, 0, 0.685),
+      rgba(0, 0, 0, 0)
+    );
   }
   .cards > .pic {
     border-bottom: 2px solid var(--background-black-grey);

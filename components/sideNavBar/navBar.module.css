@@ -1,32 +1,75 @@
 .navBarContainer {
+  z-index: 99;
   position: fixed;
-  top: 50%;
-  right: -200px;
-  width: 87px;
-  height: 200px;
-  translate: 5px -50%;
-  z-index: 10;
-  flex-direction: column;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.navBarContainer > a {
-  background-color: rgb(40, 42, 46);
-  border-radius: 2px;
-  margin: 8px;
-  width: 71px;
-  height: 29px;
+.linkContainer1,
+.linkContainer2 {
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  background-color: rgb(35, 35, 35);
   cursor: pointer;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.527);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+  transition: 0.2s;
+  margin-right: 10px;
+  overflow: hidden;
 }
-@media only screen and (max-width: 600px) {
-  .navBarContainer {
-    display: none;
-  }
+.linkContainer1 {
+  margin-top: 20px;
+}
+.linkContainer2 {
+  margin-bottom: 20px;
+}
+.linkContainer:hover {
+  transition: 0.2s;
+  background-color: rgb(45, 45, 45);
+}
+/*================*/
+.aLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+.leftArrow1 {
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  position: relative;
+  left: -3px;
+  transform: rotate(45deg);
+}
+.rightArrow1 {
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  position: relative;
+  right: -3px;
+  transform: rotate(-45deg);
+}
+.leftArrow2 {
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  position: relative;
+  left: -3px;
+  transform: rotate(135deg);
+}
+.rightArrow2 {
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  position: relative;
+  right: -3px;
+  transform: rotate(-135deg);
 }
