@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <main className={i.main} id={"home"}>
         <NavBar />
-        <div className={i.firstCardContainer}>
+        <div className={i.firstCardContainer} id={"presontation"}>
           <div className={i.cards}>
             <div className={i.leftBar}>
               <div className={i.leftBarDescriptionCard}>
@@ -34,6 +34,7 @@ const Home: NextPage = () => {
             <div className={i.rightBar}></div>
           </div>
         </div>
+        <div id={"info"}></div>
         <div className={ii.secondCardContainer}>
           <div className={ii.cards}>
             <div className={ii.leftBar}>

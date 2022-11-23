@@ -3,7 +3,7 @@ import f from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={f.footer} id="aze">
+    <footer className={f.footer} id={"footer"}>
       <div className={f.secondFooter}>
         <div className={f.topDivFooter}>
           <div className={f.footerDescription}>

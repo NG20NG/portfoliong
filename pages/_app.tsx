@@ -9,7 +9,7 @@ import Footer from "../components/footer/footer";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <header className={a.header}>
+      <header className={a.header} id={"header"}>
         <nav className={a.nav}>
           <div>
             <span>NG</span>20
