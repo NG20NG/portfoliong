@@ -58,10 +58,10 @@ const NavBar = () => {
       setLinkTop("#info");
       setLinkBottom("#contact");
     }
-    if (clientWindowHeight >= 1991 && clientWindowHeight < 2243) {
-      setLinkTop("#project");
-      setLinkBottom("#footer");
-    }
+    // if (clientWindowHeight >= 1991 && clientWindowHeight < 2243) {
+    //   setLinkTop("#project");
+    //   setLinkBottom("#footer");
+    // }
   });
   //=================================================================================
 
