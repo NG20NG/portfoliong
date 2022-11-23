@@ -14,15 +14,11 @@ const NavBar = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
   const [linkTop, setLinkTop] = useState<String>("");
   const [linkBottom, setLinkBottom] = useState<String>("");
-  const handleScroll = () => {
-    setClientWindowHeight(window.scrollY);
-  };
-  const log = () => {
-    // console.log({ linkTop, linkBottom });
-  };
   //=================================================================================
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", () =>
+      setClientWindowHeight(window.scrollY)
+    );
     console.log(clientWindowHeight);
 
     if (clientWindowHeight >= 100) {
@@ -34,12 +30,6 @@ const NavBar = () => {
       gsap.to(`.${n.navBarContainer}`, { right: 0 });
     } else {
       gsap.to(`.${n.navBarContainer}`, { right: -100 });
-    }
-    if (clientWindowHeight >= 580) {
-      gsap.to(`.${n.navBarContainer} > a`, {
-        backgroundColor: "white",
-        color: "black",
-      });
     }
     if (clientWindowHeight >= 100 && clientWindowHeight < 270) {
       setLinkTop("#header");
@@ -58,23 +48,26 @@ const NavBar = () => {
       setLinkTop("#info");
       setLinkBottom("#contact");
     }
-    // if (clientWindowHeight >= 1991 && clientWindowHeight < 2243) {
-    //   setLinkTop("#project");
-    //   setLinkBottom("#footer");
-    // }
+    if (clientWindowHeight >= 1991 && clientWindowHeight < 2240) {
+      setLinkTop("#project");
+      setLinkBottom("#footer");
+    }
+    if (clientWindowHeight >= 2240) {
+      setLinkTop("#contact");
+    }
   });
   //=================================================================================
 
   return (
     <div className={n.navBarContainer}>
       <div className={n.linkContainer1}>
-        <a className={n.aLink} href={`${linkTop}`} onClick={log}>
+        <a className={n.aLink} href={`${linkTop}`}>
           <div className={n.leftArrow1}></div>
           <div className={n.rightArrow1}></div>
         </a>
       </div>
       <div className={n.linkContainer2}>
-        <a className={n.aLink} href={`${linkBottom}`} onClick={log}>
+        <a className={n.aLink} href={`${linkBottom}`}>
           <div className={n.leftArrow2}></div>
           <div className={n.rightArrow2}></div>
         </a>

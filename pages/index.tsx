@@ -24,12 +24,13 @@ const Home: NextPage = () => {
           <div className={i.cards}>
             <div className={i.leftBar}>
               <div className={i.leftBarDescriptionCard}>
-                <p className={i.titleLeftBar}>presontation</p>
+                <p className={i.titleLeftBar}>Presontation</p>
                 <p
                   className={i.p1DescriptionLeftBar}
-                >{`Je suis un jeune développeur web assoiffe de connaissance
-                débrouillard j’aime la musique le calme et l’esprit d’équipe`}</p>
+                >{`Je suis un jeune développeur web assoiffé de connaissance 
+                débrouillarde j’aime la musique le calme et l’esprit d’équipe`}</p>
               </div>
+              <div className={i.illustrationPresontation}></div>
             </div>
             <div className={i.rightBar}></div>
           </div>

@@ -73,3 +73,8 @@
   right: -3px;
   transform: rotate(-135deg);
 }
+@media only screen and (max-width: 600px) {
+  .navBarContainer {
+    display: none;
+  }
+}

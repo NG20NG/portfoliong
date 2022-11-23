@@ -9,7 +9,7 @@ const Contact = () => {
         <div className={c.socialMedia}></div>
         <div className={c.getInTouch}>
           <div className={c.titleContainer}>
-            <h2 className={c.title}>Entrer en contact</h2>
+            <h2 className={c.title}>Contact</h2>
             <p className={c.description}>
               envoyez-moi un e-mail concernant une question ou un problème
             </p>
