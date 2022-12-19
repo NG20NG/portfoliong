@@ -19,7 +19,6 @@ const NavBar = () => {
     window.addEventListener("scroll", () =>
       setClientWindowHeight(window.scrollY)
     );
-    console.log(clientWindowHeight);
 
     if (clientWindowHeight >= 100) {
       gsap.to(`.${n.navBarContainer} > a`, {
